@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\title{Title}
+\author{Andrew Morrill and Cody McKenzie \\ { morrilan \qquad \quad mckencod}}
+\date{1/13/2017}
+
+\begin{document}
+\maketitle
+	
+	\begin{flushleft}
+		\textbf{What is the problem you noticed?}
+	\end{flushleft}
+
+	People are stressing too hard about the next day instead of planning it out the day or week before.  Having to plan out when you need to leave in order to be on time for class.   Having to figure out what parking is closest to your class so you can have more time to be there or even get there early so you can have time to double check your work or other important things.\\
+	
+		
+	\begin{flushleft}
+		\textbf{What evidence do you have about this problem?}
+	\end{flushleft}
+
+	As students, we experience this all through life, as we live nearly an hour away, it becomes an annoyance to figure out how much time you have to sleep and/or do homework. \\
+	
+	
+	\begin{flushleft}
+		\textbf{What happens when the problem is encountered?}
+	\end{flushleft}
+
+	Headache and unnecessary math. Also the chance of being off in your calculation and being way off, causing you to be either very early or very late. \\
+	
+	
+	\begin{flushleft}
+		\textbf{How might an application solve this problem?}
+	\end{flushleft}
+
+	It could make scheduling your day easier.  It would save a schedule to the app memory and keep track of time throughout the day calculate time it takes from the moment you wake up to the time you have to be at your class in sequential steps. \\
+	
+	
+	\begin{flushleft}
+		\textbf{High-Level Application, How does it solve the problem?}
+	\end{flushleft}
+
+	First you will have a create new schedule screen, which you can select to make schedules for multiple days so you don’t have to set it up for every single day.
+	
+	The first section would have a “Getting Ready” time, which will be what you put how long it takes before you can be ready to leave to your destination.  This will be carried over to every schedule that it is needed in. 
+	
+	Below you will be able to add more tasks or a destination.  If you choose a destination and the time you need to be there, then it will do a Google Maps API call, to find the time it would take to get there, add a few minutes for buffer incase something happens (or allow override in case you like to live your life on the edge) and then figure out what time you have to wake up, setting an alarm for you.  
+	
+	Specifically for Oregon State destinations, it will ask you what parking pass you have and find the closest spot to your destination, near your class.  Then it will also add the time that it would take to walk to your destination, giving a notification for each phase of travel with an optional map to show you where you need to go.
+	
+	It would be nice because each building will be coded in specifically for use by Oregon State students. \\
+	
+	
+	\begin{flushleft}
+		\textbf{Limitations}
+	\end{flushleft}
+
+	Limited number of Google Map API calls per day.  We cannot tell if an Oregon State parking area is full or not, making it difficult for last minute parking decisions.\\
+	
+	
+	\begin{flushleft}
+		\textbf{Resources}
+	\end{flushleft}
+
+	The main resources we will use are the Java language with Android Studio and the Google Maps API.\\
+	
+	
+	\begin{flushleft}
+		\textbf{Most Serious Challenge?}
+	\end{flushleft}
+
+	The most worrisome issue we have would be if the API will work well with the software that we plan to develop or not.  This is something we have never done before, so it will be a challenge, but what solutions aren't challenging?
+	
+\end{document}
