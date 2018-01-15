@@ -1,9 +1,9 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 
-\title{Title}
+\title{Super Scheduler}
 \author{Andrew Morrill and Cody McKenzie \\ { morrilan \qquad \quad mckencod}}
-\date{1/13/2017}
+\date{1/14/2017}
 
 \begin{document}
 \maketitle
@@ -19,50 +19,50 @@
 		\textbf{What evidence do you have about this problem?}
 	\end{flushleft}
 
-	As students, we experience this all through life, as we live nearly an hour away, it becomes an annoyance to figure out how much time you have to sleep and/or do homework. \\
+	As students, we experience schedule issues all the time and what better way to fix the issue than with a planner that can schedule the best moments someone needs to leave or be ready by.  Personally we live nearly an hour away from school and twenty minutes away from any town.  So it is hard to figure out how much time is needed to get ready in order for us to leave on time (especially if it is the first time going to a new place). \\
 	
 	
 	\begin{flushleft}
 		\textbf{What happens when the problem is encountered?}
 	\end{flushleft}
 
-	Headache and unnecessary math. Also the chance of being off in your calculation and being way off, causing you to be either very early or very late. \\
+	Anyone can be late to their job, school or even a meeting without the proper planning.  It can be a real headache and annoyance to try and figure out what time you may need to leave for an event. The chances of one being off in their calculations can be pretty high, especially if they are going to a new place (they could be extremely early or fairly late). \\
 	
 	
 	\begin{flushleft}
 		\textbf{How might an application solve this problem?}
 	\end{flushleft}
 
-	It could make scheduling your day easier.  It would save a schedule to the app memory and keep track of time throughout the day calculate time it takes from the moment you wake up to the time you have to be at your class in sequential steps. \\
+	The application could make scheduling your day much easier by doing all the calculations for you.  The app will measure the distance from your area of residence to the location you need to be and by doing so can give you an estimated time for you to be ready by.  The Super Scheduler will ask you how long you usually take getting ready so it can judge when to wake you up that way you can be ready and on the road by the time that is needed.  The app can always be adjusted to any new set ups you may require, for example if you need to be ready sooner than usual you can change that portion in the app (and even make it a one time thing or permanent).  So the app could be very useful and the user doesn't even have to do calculations, all they need is to know how long they will take getting ready. \\
 	
 	
 	\begin{flushleft}
 		\textbf{High-Level Application, How does it solve the problem?}
 	\end{flushleft}
 
-	First you will have a create new schedule screen, which you can select to make schedules for multiple days so you don’t have to set it up for every single day.
-	
-	The first section would have a “Getting Ready” time, which will be what you put how long it takes before you can be ready to leave to your destination.  This will be carried over to every schedule that it is needed in. 
-	
-	Below you will be able to add more tasks or a destination.  If you choose a destination and the time you need to be there, then it will do a Google Maps API call, to find the time it would take to get there, add a few minutes for buffer incase something happens (or allow override in case you like to live your life on the edge) and then figure out what time you have to wake up, setting an alarm for you.  
-	
-	Specifically for Oregon State destinations, it will ask you what parking pass you have and find the closest spot to your destination, near your class.  Then it will also add the time that it would take to walk to your destination, giving a notification for each phase of travel with an optional map to show you where you need to go.
-	
-	It would be nice because each building will be coded in specifically for use by Oregon State students. \\
+	First there will be a "Create New Schedule" screen, which you can select to make schedules for one day that way you can have just singular days planned if you have differing schedules every day and if you have multiple days with the same schedule you can choose the multiple day schedular and have your desired schedule for each of those days. 
+
+	The first section of the "Create New Schedule" screen will have a “Getting Ready” time, which is where you put how long it will take for you to be ready to leave so you can be at the designated destination on time.  The information you enter for the "Getting Ready" time will be saved and carried over to every schedule that it is needed in.  You can also change the "Getting Ready" time whenever you need to.
+ 
+	Once you are done with the "Getting Ready" portion you will be able to add more tasks and the destination you need to be.  Once you set up the destination and include the time you need to be there, then the app will do a Google Maps API call to find the time it would take to get there.  Bes sure to add a few minutes for buffering purposes, just in case something happens (or allow override in case you like to live your life on the edge).  The app can schedule a time for you to wake up by judged on the destination and the "Getting Ready" time or you can set up your own time you would like to be up (in which case the "getting Ready" time will be altered to fit the time you want to wake up).  Of course you can always have the preset alarm round to the nearest minute or so as well.
+  
+	Our main focus for the app will be for Oregon State University destinations because doing a lot of other places may take too much time to finish this project properly.  The app will be kind enough to ask what parking pass or passes you might have and then proceed to find the closest spot to your destination.  It will also add the time that it would take to walk to your destination, giving a notification for each phase of travel with an optional map to show you where you need to go.
+
+	This app will be nice for Oregon State University students because each building will be coded in by using their addresses.  We will have to code in the buildings by their addresses because not all of them are known by Google. \\
 	
 	
 	\begin{flushleft}
 		\textbf{Limitations}
 	\end{flushleft}
-
-	Limited number of Google Map API calls per day.  We cannot tell if an Oregon State parking area is full or not, making it difficult for last minute parking decisions.\\
+	
+	The app will be limited by the number of Google Map API calls that can be used each day (which is about 2,500 calls).  Another limitation will be the fact that the app will not be able to see how full or empty parking lots are, so we will have to figure something out for this situation. \\
 	
 	
 	\begin{flushleft}
 		\textbf{Resources}
 	\end{flushleft}
 
-	The main resources we will use are the Java language with Android Studio and the Google Maps API.\\
+	The main resources we will be using are Android Studio and the Google Maps API.  There may be some other resources as well but they are very minor, these are going to be the resources we will be using for sure. \\
 	
 	
 	\begin{flushleft}
